@@ -16,7 +16,7 @@ else ifneq (,$(findstring i686,$(MACHINE)))
 	HOST_PLATFORM = x86
 else ifneq (,$(findstring i386,$(MACHINE)))
 	HOST_PLATFORM = x86
-else ifneq (,$(findstring arm,$(MACHINE)))
+else ifneq (,$(findstring aarch64,$(MACHINE)))
 	HOST_PLATFORM = Arm
 else
 	DUMMY:=$(error Can't determine host platform)
